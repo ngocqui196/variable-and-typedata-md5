@@ -1,4 +1,4 @@
-import "./scss/styles.scss";
+/*import "./scss/styles.scss";*/
 
 /**
  * If/else
@@ -7,6 +7,7 @@ import "./scss/styles.scss";
 let count = 50;
 if (count > 0) {
   count--;
+  console.log("count");
 } else {
   count = 0;
 }
@@ -44,10 +45,10 @@ for (const item of keys) {
 }
 
 console.log("for-in loop");
-const user = {
-  name: 'Bob',
-  age: 55
-};
-for (const key in user) {
-  console.log(`${key}: ${user[key]}`);
-}
+// const user = {
+//   name: 'Bob',
+//   age: 55
+// };
+// for (const key in user) {
+//   console.log(`${key}: ${user[key]}`);
+// }
