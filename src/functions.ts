@@ -11,6 +11,7 @@ console.log(square(5));
 const squareFE = function (num: number): number {
   return num * num;
 }
+console.log(squareFE(34))
 
 // Higher-order function
 function add(a: number): Function {
@@ -19,7 +20,9 @@ function add(a: number): Function {
   }
 }
 
-const addWith5 = add(5);
-console.log(addWith5(3));
-console.log(addWith5(15));
+const addWith5 = add(5)(6);
+const addWith6 = add(5)(6);
+console.log(addWith5());
+console.log(addWith6());
+
 

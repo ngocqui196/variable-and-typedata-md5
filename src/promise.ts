@@ -85,7 +85,7 @@ async function fns() {
   const result = await promise;
   console.log(result); // "done!"
 }
-fns();
+fns();
 
 // handle error
 async function getUser(username: string) {
@@ -111,7 +111,7 @@ getUser('bob')
     console.log(x);
     return 5;
   }
-  (async () => {
+  (async () => {
     x += await r5();
     console.log(x);
   })();
@@ -125,9 +125,9 @@ getUser('bob')
     console.log(x);
     return 5;
   }
-  (async () => {
+  (async () => {
     const y = await r5();
-    x += y;
+    x = x + y;
     console.log(x);
   })();
 })();
